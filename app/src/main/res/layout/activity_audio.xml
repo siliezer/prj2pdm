@@ -3,6 +3,67 @@
     android:layout_height="fill_parent"
     android:orientation="horizontal"
     android:paddingTop="20dp" >
+
+    <RadioGroup
+        android:id="@+id/grupo"
+        android:layout_width="0dp"
+        android:layout_height="414dp"
+        android:layout_weight="1">
+
+        <RadioButton
+            android:id="@+id/radiobutton1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="myMetodo"
+            android:text="Mediterranea" />
+
+        <RadioButton
+            android:id="@+id/radiobutton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="myMetodo"
+            android:text="DASH" />
+
+        <RadioButton
+            android:id="@+id/radiobutton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="myMetodo"
+            android:text="Flexiteriana" />
+        <RadioButton
+            android:id="@+id/radiobutton4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="myMetodo"
+            android:text="Power" />
+        <RadioButton
+            android:id="@+id/radiobutton5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="myMetodo"
+            android:text="TLC" />
+        <RadioButton
+            android:id="@+id/radiobutton6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="myMetodo"
+            android:text="Paleo" />
+        <RadioButton
+            android:id="@+id/radiobutton7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="myMetodo"
+            android:text="Detox" />
+        <RadioButton
+            android:id="@+id/radiobutton8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="myMetodo"
+            android:text="Alcalina" />
+
+    </RadioGroup>
+
     <Button
         android:id="@+id/play"
         android:layout_width="0dp"
@@ -15,4 +76,5 @@
     android:layout_height="50dp"
     android:layout_weight="1"
     android:text="@string/btnstop"/>
+
 </LinearLayout>

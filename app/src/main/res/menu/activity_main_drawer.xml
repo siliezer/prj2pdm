@@ -23,8 +23,8 @@
             android:title="@string/grabar_audio" />
         <item
             android:id="@+id/nav_audio"
-            android:icon="@drawable/ic_menu_audio"
-            android:title="Audio" />
+            android:icon="@drawable/ic_baseline_audiotrack_24"
+            android:title="AudioInformación" />
         <item
             android:id="@+id/nav_video"
             android:icon="@drawable/ic_menu_video"
