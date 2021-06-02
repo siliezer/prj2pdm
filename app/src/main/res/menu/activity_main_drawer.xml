@@ -11,7 +11,7 @@
         <item
             android:id="@+id/nav_share"
             android:icon="@drawable/presi"
-            android:title="Presidentes" />
+            android:title="Tipos De Dietas" />
 
         <item
             android:id="@+id/nav_gallery"
