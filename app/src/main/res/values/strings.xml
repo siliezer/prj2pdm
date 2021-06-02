@@ -1,8 +1,8 @@
 <resources>
-    <string name="app_name">Trivia El Salvador</string>
+    <string name="app_name">Control de Dieta</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_title">¡Nutrición y más!</string>
     <string name="nav_header_subtitle"></string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Salir</string>
@@ -11,7 +11,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="cuestionario">Cuestionario</string>
     <string name="iniciar_juego">Iniciar Juego</string>
-    <string name="mapa">Mapa</string>
+    <string name="mapa">Mapa Nutricionista</string>
     <string name="again">Volver a Jugar</string>
     <string name="mapback">Ver el map</string>
 

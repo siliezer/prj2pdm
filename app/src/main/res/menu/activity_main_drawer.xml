@@ -28,7 +28,7 @@
         <item
             android:id="@+id/nav_video"
             android:icon="@drawable/ic_menu_video"
-            android:title="video" />
+            android:title="¿Control de peso?" />
         <item
             android:id="@+id/nav_camara"
             android:icon="@drawable/ic_menu_camara"

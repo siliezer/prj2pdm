@@ -60,7 +60,7 @@ public class fin extends Fragment implements View.OnClickListener {
                 new Button.OnClickListener(){
                     @Override
                     public void onClick(View v) {
-                        mapaweb mapaweb = new mapaweb();
+                        WebMap mapaweb = new WebMap();
                         FragmentTransaction tr = getFragmentManager().beginTransaction();
                         tr.replace(R.id.contenedor, mapaweb);
                         tr.commit();

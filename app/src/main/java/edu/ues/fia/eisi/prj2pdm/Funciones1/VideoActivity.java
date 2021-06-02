@@ -18,20 +18,22 @@ public class VideoActivity extends AppCompatActivity {
     Button Stop;
     VideoView video;
     MediaController mediacontrol;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_video);
         video=(VideoView) findViewById(R.id.video);
-        File f=new File(Environment.getExternalStorageDirectory(),"wildlife.3gp");
+        File f=new File(Environment.getExternalStorageDirectory().getAbsolutePath() +
+                "/Download/","video.mp4");
         if (f.exists()){
-            Uri uri=Uri.fromFile(f);
+            Uri uri= Uri.fromFile(f);
             video.setVideoURI(uri);
             mediacontrol=new MediaController(this);
             video.setMediaController(mediacontrol);
             mediacontrol.show();
 
-
         }
+
     }
 }

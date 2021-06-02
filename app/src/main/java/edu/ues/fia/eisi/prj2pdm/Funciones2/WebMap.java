@@ -10,7 +10,7 @@ import android.webkit.WebView;
 
 import edu.ues.fia.eisi.prj2pdm.R;
 
-public class mapaweb extends Fragment {
+public class WebMap extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
