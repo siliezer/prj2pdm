@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Trivia El Salvador</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle"></string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Salir</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="cuestionario">Cuestionario</string>
+    <string name="iniciar_juego">Iniciar Juego</string>
+    <string name="mapa">Mapa</string>
+    <string name="again">Volver a Jugar</string>
+    <string name="mapback">Ver el map</string>
+
+    <!-- Librerias -->
+    <string name="btnplay">Play </string>
+    <string name="btnstop">stop </string>
+    <string name="mensajevideo">Haga Click arriba de este mensaje</string>
+    <string name="imagen1">imagen</string>
+    <string name="boton1">tomar foto</string>
+    <string name="txtAltitud">Altitud </string>
+    <string name="txtLatitud">Latitud </string>
+    <string name="txtLongitud">Longitud </string>
+    <string name="txtDireccion">Direccion </string>
+    <string name="btnObtenerDatos">Obtener Datos Posicion </string>
+    <string name="edt_tts">Diga algo</string>
+    <string name="btn_tts1">Escuchar</string>
+    <string name="btn_tts2">Guardar</string>
+    <string name="btnTalk">Hable</string>
+    <string name="grabar_audio">Grabar Audio</string>
+
+    <string name="desconectar">Desconectar</string>
+    <string name="not_log_in">No se pudo iniciar sesión</string>
+    <string name="log_out">Log Out</string>
+    <string name="revoke">Revoke</string>
+    <string name="not_close_session">No se pudo cerrar sesión</string>
+    <string name="not_revoke">No se pudo revocar el acceso</string>
+    <string name="not_firebase_auth">No se pudo autenticar con Firebase</string>
+
+    <string name="pdf">Descargar PDF</string>
+    <string name="compartir">Compartir por Bluetooth</string>
+
+</resources>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/map_search"
+            android:title="@string/mapa" />
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/presi"
+            android:title="Presidentes" />
+
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/cuestionario"
+            android:title="@string/cuestionario" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/microphone_outline"
+            android:title="@string/grabar_audio" />
+        <item
+            android:id="@+id/nav_audio"
+            android:icon="@drawable/ic_menu_audio"
+            android:title="Audio" />
+        <item
+            android:id="@+id/nav_video"
+            android:icon="@drawable/ic_menu_video"
+            android:title="video" />
+        <item
+            android:id="@+id/nav_camara"
+            android:icon="@drawable/ic_menu_camara"
+            android:title="camara" />
+        <item
+            android:id="@+id/nav_speech"
+            android:icon="@drawable/ic_menu_speech"
+            android:title="speech" />
+        <item
+            android:id="@+id/nav_texttospeech"
+            android:icon="@drawable/ic_menu_texttospeech"
+            android:title="TexttoSpeech" />
+        <item
+            android:id="@+id/nav_gps"
+            android:icon="@drawable/ic_menu_gps"
+            android:title="GPS" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+        </menu>
+    </item>
+
+</menu>

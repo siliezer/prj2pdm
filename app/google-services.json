@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "901234099652",
+    "firebase_url": "https://todaycalogero.firebaseio.com",
+    "project_id": "todaycalogero",
+    "storage_bucket": "todaycalogero.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:901234099652:android:cb28955d472e83ff",
+        "android_client_info": {
+          "package_name": "edu.ues.fia.eisi.prj2pdm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "901234099652-biru2p81iaj36dmel1ci048n9s1b2vc9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "edu.ues.fia.eisi.prj2pdm",
+            "certificate_hash": "cb37bf5e99dcd5d237f7971e588761b8f5c02f18"
+          }
+        },
+        {
+          "client_id": "901234099652-gm72u6d98afgjrvi409nuf44bbndmdn2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwMhiwavfiq9UGpJ1SriwHZvz-U3fXS3M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "901234099652-gm72u6d98afgjrvi409nuf44bbndmdn2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
