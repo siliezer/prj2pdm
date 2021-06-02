@@ -1,18 +1,26 @@
 package edu.ues.fia.eisi.prj2pdm;
 
-import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import com.google.android.gms.auth.api.Auth;
-import com.google.android.gms.common.api.GoogleApiClient;
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.Toast;
+
+import com.facebook.CallbackManager;
+import com.facebook.FacebookCallback;
+import com.facebook.FacebookException;
+import com.facebook.FacebookSdk;
+import com.facebook.appevents.AppEventsLogger;
+import com.facebook.login.LoginResult;
+import com.facebook.login.widget.LoginButton;
+import com.google.android.gms.auth.api.Auth;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.auth.api.signin.GoogleSignInResult;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.SignInButton;
+import com.google.android.gms.common.api.GoogleApiClient;
 
 import edu.ues.fia.eisi.prj2pdm.Funciones3.MiMainActivity;
 
@@ -24,6 +32,8 @@ public class Principal extends AppCompatActivity
     private SignInButton signInButton;
     public static final int SIGN_IN_CODE = 777;
     ProgressBar progressBar;
+    LoginButton facebookLoginButton;
+    CallbackManager callbackManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,6 +61,25 @@ public class Principal extends AppCompatActivity
 
             }
         });
+        FacebookSdk.sdkInitialize(getApplicationContext());
+        AppEventsLogger.activateApp(this);
+        callbackManager = CallbackManager.Factory.create();
+        facebookLoginButton = (LoginButton) findViewById(R.id.login_button);
+        facebookLoginButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
+            @Override
+            public void onSuccess(LoginResult loginResult) {
+                Toast.makeText(getApplicationContext(),"¡Bienvenido!", Toast.LENGTH_LONG).show();
+                goMainScreen();
+            }
+            @Override
+            public void onCancel() {
+                Toast.makeText(getApplicationContext(),"Se cancelo", Toast.LENGTH_LONG).show();
+            }
+            @Override
+            public void onError(FacebookException exception) {
+                Toast.makeText(getApplicationContext(),"Hubo un error", Toast.LENGTH_LONG).show();
+            }
+        });
     }
 
     @Override
@@ -61,12 +90,14 @@ public class Principal extends AppCompatActivity
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
+        callbackManager.onActivityResult(requestCode,resultCode, data);
 
         if (requestCode == SIGN_IN_CODE) {
             GoogleSignInResult result = Auth.GoogleSignInApi.getSignInResultFromIntent(data);
             handleSignInResult(result);
         }
     }
+
 
     private void handleSignInResult(GoogleSignInResult result) {
 
@@ -84,4 +115,8 @@ public class Principal extends AppCompatActivity
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
     }
+
+
+
+
 }

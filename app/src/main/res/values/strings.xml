@@ -43,4 +43,7 @@
     <string name="pdf">Descargar PDF</string>
     <string name="compartir">Compartir por Bluetooth</string>
 
+    <string name="facebook_app_id">3984421551675378</string> <string name="fb_login_protocol_scheme">fb3984421551675378</string>
+
+
 </resources>
