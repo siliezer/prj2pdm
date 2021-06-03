@@ -3,6 +3,21 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical" >
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tome una fotografía de su progreso actual"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="(Se almacenarán en la carpeta DCIM de su dispositivo)" />
+
     <ImageView
         android:id="@+id/mainimage"
         android:layout_width="match_parent"
@@ -17,4 +32,5 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:text="@string/boton1" />
+
 </LinearLayout>
