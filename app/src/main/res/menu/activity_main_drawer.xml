@@ -11,7 +11,7 @@
         <item
             android:id="@+id/nav_share"
             android:icon="@drawable/presi"
-            android:title="Tipos De Dietas" />
+            android:title="Dietas y Calculadora de IMC" />
 
         <item
             android:id="@+id/nav_gallery"
@@ -24,11 +24,11 @@
         <item
             android:id="@+id/nav_audio"
             android:icon="@drawable/ic_baseline_audiotrack_24"
-            android:title="AudioInformación" />
+            android:title="Audio Información" />
         <item
             android:id="@+id/nav_video"
             android:icon="@drawable/ic_menu_video"
-            android:title="¿Control de peso?" />
+            android:title="QR para control de peso" />
         <item
             android:id="@+id/nav_camara"
             android:icon="@drawable/ic_menu_camara"
@@ -40,7 +40,7 @@
         <item
             android:id="@+id/nav_texttospeech"
             android:icon="@drawable/ic_menu_texttospeech"
-            android:title="TexttoSpeech" />
+            android:title="TextoSpeech" />
         <item
             android:id="@+id/nav_gps"
             android:icon="@drawable/ic_menu_gps"
