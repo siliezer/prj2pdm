@@ -1,25 +1,30 @@
 package edu.ues.fia.eisi.prj2pdm.Funciones1;
 
 import android.Manifest;
+import android.content.Context;
 import android.content.pm.PackageManager;
-import android.os.Build;
-import android.support.annotation.RequiresApi;
-import android.support.v4.app.ActivityCompat;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import java.util.List;
 import android.location.Address;
 import android.location.Geocoder;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
-import android.content.Context;
+import android.os.Build;
+import android.os.Bundle;
+import android.support.annotation.RequiresApi;
+import android.support.v4.app.ActivityCompat;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.webkit.JavascriptInterface;
+import android.webkit.WebChromeClient;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import java.util.List;
 
 import edu.ues.fia.eisi.prj2pdm.R;
 
@@ -29,6 +34,7 @@ public class GPSActivity extends AppCompatActivity {
     EditText edtlongitud;
     EditText edtaltitud;
     TextView edtdireccion;
+    WebView mapa;
     LocationManager locationManager;
     private static final int INITIAL_REQUEST = 1337;
     private static final int LOCATION_REQUEST = INITIAL_REQUEST + 3;
@@ -45,6 +51,7 @@ public class GPSActivity extends AppCompatActivity {
                     String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 200);
         }
         setContentView(R.layout.activity_gps);
+        mapa = (WebView)  findViewById(R.id.mapaid);
         obtenerDir = (Button) findViewById(R.id.btnObtenerDatosPos);
         edtlatitud = (EditText) findViewById(R.id.edtLatitud);
         edtlongitud = (EditText) findViewById(R.id.edtlongitud);
@@ -149,4 +156,29 @@ public class GPSActivity extends AppCompatActivity {
         locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER,
                 0, 0, locationListener);
     }
+
+    public class JavaScriptInterface {
+        Context mContext;
+        JavaScriptInterface(Context c) {
+            mContext = c;
+        }
+        @JavascriptInterface
+        public String getFromAndroid() {
+            final String latlong = edtlatitud.getText().toString()+","+edtlongitud.getText().toString();
+            return latlong;
+        }
+    }
+
+    public void verMapa(View v){
+
+        mapa.loadUrl("file:///android_asset/index1.html");
+        WebSettings webSettings = mapa.getSettings();
+        webSettings.setJavaScriptEnabled(true);
+        mapa.setWebChromeClient(new WebChromeClient() {});
+        mapa.addJavascriptInterface(new JavaScriptInterface(this), "Android");
+
+
+
+    }
+
 }

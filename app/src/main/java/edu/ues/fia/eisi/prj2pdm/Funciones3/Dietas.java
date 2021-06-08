@@ -6,14 +6,14 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 
 import edu.ues.fia.eisi.prj2pdm.R;
-public class Presidentes extends AppCompatActivity {
+public class Dietas extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_presidentes);
+        setContentView(R.layout.activity_dietas);
         WebView myWebView = (WebView) findViewById(R.id.webview2);
-        myWebView.loadUrl("file:///android_asset/presidentes.html");
+        myWebView.loadUrl("file:///android_asset/dietas.html");
         WebSettings webSettings = myWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
 

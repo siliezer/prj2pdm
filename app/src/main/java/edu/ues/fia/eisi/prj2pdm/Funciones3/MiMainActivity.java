@@ -90,7 +90,7 @@ public class MiMainActivity extends AppCompatActivity
             Intent myIntent = new Intent(this, RecordAudio.class);
             startActivity(myIntent);
         } else if (id == R.id.nav_share) {
-            Intent myIntent = new Intent(this, Presidentes.class);
+            Intent myIntent = new Intent(this, Dietas.class);
             startActivity(myIntent);
         }
         else if (id == R.id.nav_audio) {
