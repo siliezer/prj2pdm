@@ -14,14 +14,6 @@
             android:title="Tipos De Dietas" />
 
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/cuestionario"
-            android:title="@string/cuestionario" />
-        <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/microphone_outline"
-            android:title="@string/grabar_audio" />
-        <item
             android:id="@+id/nav_audio"
             android:icon="@drawable/ic_baseline_audiotrack_24"
             android:title="AudioInformación" />
@@ -33,10 +25,7 @@
             android:id="@+id/nav_camara"
             android:icon="@drawable/ic_menu_camara"
             android:title="Cámara" />
-        <item
-            android:id="@+id/nav_speech"
-            android:icon="@drawable/ic_menu_speech"
-            android:title="speech" />
+
         <item
             android:id="@+id/nav_texttospeech"
             android:icon="@drawable/ic_menu_texttospeech"

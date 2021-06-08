@@ -2,8 +2,8 @@ package edu.ues.fia.eisi.prj2pdm.Funciones3;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.FragmentManager;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -15,7 +15,6 @@ import android.view.MenuItem;
 import edu.ues.fia.eisi.prj2pdm.Funciones1.AudioActivity;
 import edu.ues.fia.eisi.prj2pdm.Funciones1.CamaraActivity;
 import edu.ues.fia.eisi.prj2pdm.Funciones1.GPSActivity;
-import edu.ues.fia.eisi.prj2pdm.Funciones1.SpeechActivity;
 import edu.ues.fia.eisi.prj2pdm.Funciones1.TextToSpeechActivity;
 import edu.ues.fia.eisi.prj2pdm.Funciones1.VideoActivity;
 import edu.ues.fia.eisi.prj2pdm.Principal;
@@ -84,12 +83,8 @@ public class MiMainActivity extends AppCompatActivity
         FragmentManager fragmentManager=getSupportFragmentManager();
         if (id == R.id.nav_camera) {
             fragmentManager.beginTransaction().replace(R.id.contenedor, new mapaweb()).commit();
-        } else if (id == R.id.nav_gallery) {
-            fragmentManager.beginTransaction().replace(R.id.contenedor, new principalJuego()).commit();
-        } else if (id == R.id.nav_slideshow) {
-            Intent myIntent = new Intent(this, RecordAudio.class);
-            startActivity(myIntent);
-        } else if (id == R.id.nav_share) {
+
+        }else if (id == R.id.nav_share) {
             Intent myIntent = new Intent(this, Dietas.class);
             startActivity(myIntent);
         }
@@ -104,16 +99,13 @@ public class MiMainActivity extends AppCompatActivity
             Intent intent = new Intent(this, CamaraActivity.class);
             startActivity(intent);
         }
-        else if (id == R.id.nav_speech) {
-            Intent intent = new Intent(this, SpeechActivity.class);
-            startActivity(intent);
-        }
+
         else if (id == R.id.nav_texttospeech) {
-            Intent intent = new Intent(this, TextToSpeechActivity.class);//correccion 1
+            Intent intent = new Intent(this, TextToSpeechActivity.class);
             startActivity(intent);
         }
         else if (id == R.id.nav_gps) {
-            Intent intent = new Intent(this, GPSActivity.class);//correccion 1
+            Intent intent = new Intent(this, GPSActivity.class);
             startActivity(intent);
         }
 

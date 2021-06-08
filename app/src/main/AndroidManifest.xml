@@ -23,9 +23,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".Funciones1.GPSActivity"></activity>
         <activity android:name=".Funciones3.Dietas"></activity>
-        <activity android:name=".Funciones3.RecordAudio"></activity>
         <activity android:name=".Funciones1.TextToSpeechActivity" />
-        <activity android:name=".Funciones1.SpeechActivity" />
         <activity android:name=".Funciones1.CamaraActivity" />
         <activity android:name=".Funciones1.VideoActivity" />
         <activity android:name=".Funciones1.AudioActivity" />
