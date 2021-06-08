@@ -31,7 +31,7 @@ public class VideoActivity extends AppCompatActivity {
             video.setVideoURI(uri);
         }
         else{
-            Uri uri = Uri.parse("https://www.youtube.com/watch?v=Z7f3GaI0a44");
+            Uri uri = Uri.parse("https://drive.google.com/file/d/1SCrZ2xQxBN2mtNJdKGPJfvsv39brvC3h/view?usp=sharing");
             video.setVideoURI(uri);
         }
         mediacontrol=new MediaController(this);
